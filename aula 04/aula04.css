@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #ffffff; /* #2c2c2c */
+    padding: 30px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.label-input-text {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="name"]
+input[type="password"]
+input[type="email"]
+input[type="number"]
+input[type="date"] {
+    padding: px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select[option="value"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
