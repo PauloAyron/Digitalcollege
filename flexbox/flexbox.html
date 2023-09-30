@@ -11,8 +11,7 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background-color: #f4f4f4;
+      background-color: lightgrey;
       height: 100vh;
     }
 
@@ -43,18 +42,119 @@
       cursor: pointer;
     }
 
+    .list {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      gap: 15;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      transition: transform 0.5s;
+
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .profession {
+      color: gray;
+    }
+
+    .baseboard {
+      background-color: #333;
+      justify-content: space-evenly;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+    }
+
+    .text {
+      align-items: center;
+      color: white;
+      gap: 5px;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
   </style>
 </head>
 
 <body>
   <div class="header">
-    <div class="logo">Logo</div>
+    <div class="logo">Login</div>
     <div class="menu">
       <a class="menu-item">Início</a>
       <a>Sobre</a>
       <a>Contato</a>
     </div>
   </div>
+  <div>
+    
+    <div class="list">
+      <div class="card">
+        <img class="foto" src="https://cdn4.iconfinder.com/data/icons/smileys-for-fun/128/smiley__25-1024.png" width="70px" height="70px">
+        <p class="name">Ariel</p>
+        <p class="profession" >Dev Front-End</p>
+        </div>
+
+        <div class="card">
+          <img class="foto" src="https://cdn4.iconfinder.com/data/icons/smileys-for-fun/128/smiley__14-1024.png" width="70px" height="70px">
+          <p class="name">Sam</p>
+          <p class="profession" >Designer UI/UX</p>
+      </div>
+
+      <div class="card">
+        <img class="foto" src="https://cdn4.iconfinder.com/data/icons/smileys-for-fun/128/smiley__21-1024.png" width="70px" height="70px">
+        <p class="name">Manu</p>
+        <p class="profession" >Dev Back-End</p>
+    </div>
+    </div>
+
+    <div class="baseboard">
+      <div class="text">
+      <h3>Sobre nós</h3>
+      <p>Quem somos</p>
+      <p>Missão</p>
+      <p>Visão</p>
+    </div>
+
+    <div class="text">
+      <h3>Contato</h3>
+      <p>E-mail</p>
+      <p>Telefone</p>
+      <p>localização</p>
+    </div>
+
+    <div class="text">
+      <h3>Redes Sociais</h3>
+      <p><a href="https://www.facebook.com/?locale=pt_BR" target="_blank">Facebook</a></p>
+
+      <p><a href="https://twitter.com/i/flow/login" target="_blank">X / Twitter</a></p>
+
+      <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+    </div>
+    </div>
 </body>
 
 </html>
